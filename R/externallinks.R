@@ -43,9 +43,9 @@ add.multimir.links <- function(x, org) {
         } else if (d == "tarbase") {
             symbol   <- as.character(x$target_symbol[m])
             links[m] <- 
-                paste0("http://diana.imis.athena-innovation.gr/DianaTools/",
-                       "index.php?r=tarbase/index&mirnas=",
-                       mir, "&genes=", symbol)
+                paste0("https://carolina.imis.athena-innovation.gr/diana_tools/web/",
+                       "index.php?r=tarbasev8%2Findex&miRNAs%5B%5D=&miRNAs%5B%5D=",
+                       mir, "&genes%5B%5D=", symbol)
         } else if (d == "mir2disease") {
             # NOTE: Can only search by miRNA, gene or disease alone - here use
             # gene
@@ -150,7 +150,7 @@ add.multimir.links <- function(x, org) {
             if (org == "hsa") {
                 links[m] <-
                     paste0("http://www.targetscan.org/cgi-bin/targetscan/",
-                           "vert_61/targetscan.cgi?species=Human&gid=", symbol,
+                           "vert_72/targetscan.cgi?species=Human&gid=", symbol,
                            "&mirg=", mir)
             } else if (org == "mmu") {
                 links[m] <-
