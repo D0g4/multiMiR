@@ -45,7 +45,7 @@ add.multimir.links <- function(x, org) {
             links[m] <- 
                 paste0("https://carolina.imis.athena-innovation.gr/diana_tools/web/",
                        "index.php?r=tarbasev8%2Findex&miRNAs%5B%5D=&miRNAs%5B%5D=",
-                       mir, "&genes%5B%5D=", symbol)
+                       mir, "&genes%5B%5D=", symbol, "&sources%5B%5D=1&sources%5B%5D=7&sources%5B%5D=9")
         } else if (d == "mir2disease") {
             # NOTE: Can only search by miRNA, gene or disease alone - here use
             # gene
